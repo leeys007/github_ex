@@ -1,1 +1,1 @@
-print("새로운 파일입니다.")  # This line is added to new_file.py
+print("수정 파일입니다.")   # This line is added to new_file.py
