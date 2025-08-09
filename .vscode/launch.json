@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: myDebug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}${pathSeparator}debug_test.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder}",
+      "env": { "CUDA_VISIBLE_DEVICES": "0" }, // GPU 개수 안으로
+      "args": ["--arg1", "arg1_value", "--arg2", "arg2_value"]
+    }
+  ]
+}
